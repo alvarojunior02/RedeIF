@@ -1,14 +1,16 @@
 import styled from 'styled-components/native';
 
-const widthButton = "200px";
-const heightButton = "50px";
-const borderRadius = "10px";
+import {
+    widthButton,
+    heightButton,
+    borderRadius
+} from '../../config/pixels';
 
 export const Container = styled.View`
     flex: 1;
     align-items: center;
 
-    background-color: white;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
 `;
 
 export const Logo = styled.Image`
@@ -22,7 +24,7 @@ export const Title = styled.Text`
     font-size: 52px;
     font-family: Roboto;
     font-weight: bold;
-    color: black;
+    color: ${({ theme }) => theme.COLORS.TEXT};;
 
     margin-top: 30px;
 `;
@@ -43,9 +45,8 @@ export const ButtonLogin = styled.TouchableOpacity`
 
 export const TextLogin = styled.Text`
     font-size: 35px;
-    font-family: Roboto;
-    font-weight: bold;
-    color: #34A444;
+    font-family: ${({ theme }) => theme.FONTS.BOLD};
+    color: ${({ theme }) => theme.COLORS.GREEN_400};
 `;
 
 export const ButtonRegister = styled.TouchableOpacity`
@@ -66,13 +67,13 @@ export const TextRegister = styled.Text`
     font-size: 25px;
     font-family: Roboto;
     font-weight: bold;
-    color: #BA9E07;
+    color: ${({ theme }) => theme.COLORS.YELLOW_600};
 `;
 
 export const TextVersion = styled.Text`
     font-size: 22px;
-    font-family: Roboto;
-    color: black;
+    font-family: ${({ theme }) => theme.FONTS.BOLD};
+    color: ${({ theme }) => theme.COLORS.TEXT};
 
     margin-top: 30px;
 `;

@@ -11,7 +11,7 @@ import {
     TextVersion
 } from './styles';
 
-const logo = require('../../assets/logo.png');
+import logo from '../../assets/logo.png';
 
 const Home = ({ navigation }: any) => {
   return (

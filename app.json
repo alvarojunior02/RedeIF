@@ -1,10 +1,20 @@
 {
   "expo": {
-    "name": "redeif",
-    "slug": "redeif",
+    "name": "RedeIF",
+    "slug": "RedeIF",
+    "privacy": "public",
+    "platforms": [
+      "android"
+    ],
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "backgroundColor": "#34A444"
+    },
+    "android": {
+      "package": "com.ifmt.redeif",
+      "versionCode": 1
+    }
   }
 }
