@@ -8,16 +8,21 @@ import {
 
 export const Container = styled.View`
     flex: 1;
+    justify-content: space-around;
     align-items: center;
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
 `;
 
+export const BoxContent = styled.View`
+    justify-content: center;
+    align-items: center;
+`;
+
 export const Logo = styled.Image`
+    margin-top: 60px;
     width: 170px;
     height: 170px;
-
-    margin-top: 120px;
 `;
 
 export const Title = styled.Text`

@@ -13,11 +13,13 @@ export const Container = styled.View`
 
 export const Body = styled.View`
     flex: 1;
-    justify-content: flex-start;
     align-items: center;
+    align-content: center;
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND};
     padding: 0 10%;
+
+    margin-top: 40px;
 `;
 
 export const Title = styled.Text`
@@ -29,7 +31,7 @@ export const Label = styled.Text`
     margin-top: 30px;
 
     font-family: ${({ theme }) => theme.FONTS.BOLD};
-    font-size: 20px;
+    font-size: 24px;
 
     align-self: flex-start;
 `;
@@ -92,15 +94,15 @@ export const TextLogin = styled.Text`
 `;
 
 export const ButtonRecoverPassword = styled.TouchableOpacity`
-    margin-top: 30px;
-
     width: ${widthButton};
     height: ${heightButton};
-
+    
     justify-content: center;
     align-items: center;
 
     background-color: transparent;
+
+    margin: 30px 0;
 `;
 
 export const TextRecoverPassword = styled.Text`

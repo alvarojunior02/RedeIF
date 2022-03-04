@@ -4,6 +4,7 @@ import {
     Container,
     Logo,
     Title,
+    BoxContent,
     ButtonLogin,
     TextLogin,
     ButtonRegister,
@@ -17,22 +18,29 @@ const Home = ({ navigation }: any) => {
   return (
     <>
         <Container>
-            <Logo source={logo}/>
-            <Title>Rede IF</Title>
+            <BoxContent>
+                <Logo source={logo}/>
+                <Title>Rede IF</Title>
+            </BoxContent>
+            <BoxContent>
+                <ButtonLogin
+                    onPress={() => {
+                        navigation.navigate('Login');
+                    }}
+                >
+                    <TextLogin>Entrar</TextLogin>
+                </ButtonLogin>
 
-            <ButtonLogin
-                onPress={() => {
-                    navigation.navigate('Login');
-                }}
-            >
-                <TextLogin>Entrar</TextLogin>
-            </ButtonLogin>
+                <ButtonRegister
+                    onPress={() => {
+                        navigation.navigate('Singup');
+                    }}
+                >
+                    <TextRegister>Criar Conta</TextRegister>
+                </ButtonRegister>
 
-            <ButtonRegister>
-                <TextRegister>Criar Conta</TextRegister>
-            </ButtonRegister>
-
-            <TextVersion>1.0</TextVersion>
+                <TextVersion>1.0</TextVersion>
+            </BoxContent>
         </Container>
     </>
   );

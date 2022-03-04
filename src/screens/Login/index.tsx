@@ -22,7 +22,7 @@ import {
 const Login = ({navigation}: any) => {
     const [login, setLogin] = useState<string>('');
     const [password, setPassword] = useState<string>('');
-    const [checkBoxActive, setCheckBoxActive] = useState<boolean>(true);
+    const [checkBoxActive, setCheckBoxActive] = useState<boolean>(false);
 
     return (
         <>
